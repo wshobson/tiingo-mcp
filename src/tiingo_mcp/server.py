@@ -413,3 +413,4 @@ async def get_splits(
 # ── Register resources and prompts ───────────────────────────────────
 
 import tiingo_mcp.resources  # noqa: E402, F401
+import tiingo_mcp.prompts  # noqa: E402, F401
