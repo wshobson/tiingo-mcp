@@ -30,7 +30,7 @@ async def test_capabilities_resource_content():
         assert "asset_classes" in data
         assert "rate_limits" in data
         assert "plan_restrictions" in data
-        assert data["server_version"] == "1.0.0"
+        assert data["server_version"] == "1.1.0"
         assert data["tool_count"] == 17
         assert "stocks" in data["asset_classes"]
         assert "free" in data["rate_limits"]

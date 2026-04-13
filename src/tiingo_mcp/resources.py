@@ -218,7 +218,7 @@ def capabilities_resource() -> str:
     """Return static server capability metadata."""
     data = {
         "server_name": "Tiingo MCP Server",
-        "server_version": "1.0.0",
+        "server_version": "1.1.0",
         "asset_classes": {
             "stocks": {
                 "description": "US and international equities",
