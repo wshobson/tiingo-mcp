@@ -1,9 +1,10 @@
 # tiingo-mcp
 
 [![PyPI version](https://img.shields.io/pypi/v/tiingo-mcp)](https://pypi.org/project/tiingo-mcp/)
-[![Python](https://img.shields.io/pypi/pyversions/tiingo-mcp)](https://pypi.org/project/tiingo-mcp/)
+[![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)](https://pypi.org/project/tiingo-mcp/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![CI](https://github.com/wshobson/tiingo-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/wshobson/tiingo-mcp/actions/workflows/ci.yml)
+[![Version](https://img.shields.io/badge/version-1.0.0-green)](https://github.com/wshobson/tiingo-mcp/blob/main/CHANGELOG.md)
 
 A production-grade [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server for the [Tiingo](https://www.tiingo.com) financial data API.
 
