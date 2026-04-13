@@ -1,11 +1,11 @@
 # tiingo-mcp
 
-[![PyPI](https://img.shields.io/badge/PyPI-tiingo--mcp%20v1.0.0-blue)](https://pypi.org/project/tiingo-mcp/)
+[![PyPI](https://img.shields.io/badge/PyPI-tiingo--mcp%20v1.1.0-blue)](https://pypi.org/project/tiingo-mcp/)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue)](https://pypi.org/project/tiingo-mcp/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![CI](https://github.com/wshobson/tiingo-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/wshobson/tiingo-mcp/actions/workflows/ci.yml)
 
-An [MCP](https://modelcontextprotocol.io) server that wraps the [Tiingo](https://www.tiingo.com) financial data API. Covers stocks, forex, crypto, news, fundamentals, and corporate actions across 17 tools.
+An [MCP](https://modelcontextprotocol.io) server that wraps the [Tiingo](https://www.tiingo.com) financial data API. Covers stocks, forex, crypto, news, fundamentals, and corporate actions across 17 tools, 4 resources, and 5 prompts.
 
 ## Installation
 
@@ -105,6 +105,29 @@ TIINGO_API_KEY=your-key tiingo-mcp
 | `get_splits` | Stock split history * |
 
 \* *Requires Power or Business plan*
+
+## Resources
+
+Static reference data exposed as browsable MCP resources. No API calls consumed.
+
+| Resource | Description |
+|----------|-------------|
+| `tiingo://capabilities` | Server capabilities, asset classes, rate limits, plan restrictions |
+| `tiingo://fundamentals/definitions` | Curated reference of 20 key fundamental metrics |
+| `tiingo://guide/date-formats` | Date formats, resample frequencies, sort options |
+| `tiingo://guide/{asset_class}` | Usage guide per asset class (stocks, forex, crypto, news, fundamentals, corporate-actions) |
+
+## Prompts
+
+Reusable workflow templates that guide LLMs through multi-step financial analysis.
+
+| Prompt | Arguments | Description |
+|--------|-----------|-------------|
+| `analyze-stock` | `ticker`, `include_news` | Comprehensive single-stock analysis |
+| `compare-stocks` | `ticker1`, `ticker2`, `period` | Side-by-side stock comparison |
+| `crypto-market-overview` | `tickers` | Crypto market snapshot with 7-day trends |
+| `earnings-report-analysis` | `ticker`, `earnings_date` | Earnings report with price reaction and news |
+| `forex-pair-analysis` | `pair`, `period` | Currency pair trend and volatility analysis |
 
 ## Parameters
 
