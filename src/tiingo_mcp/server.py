@@ -31,6 +31,7 @@ async def _lifespan(server: FastMCP):
 
 mcp = FastMCP(
     name="Tiingo MCP Server",
+    version="1.0.0",
     instructions=(
         "Financial data server powered by Tiingo. Provides real-time and historical "
         "stock prices, forex rates, crypto data, news, fundamentals, and corporate actions. "
