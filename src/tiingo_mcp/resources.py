@@ -62,10 +62,7 @@ ASSET_CLASS_GUIDES: dict[str, dict] = {
         "ticker_format": "Lowercase concatenated pair, e.g. eurusd, gbpusd, usdjpy",
         "workflows": [
             "Use get_forex_quote for the current top-of-book bid/ask for a pair.",
-            (
-                "Use get_forex_prices for historical OHLCV data;"
-                " supports 1min to 1day resampling."
-            ),
+            ("Use get_forex_prices for historical OHLCV data; supports 1min to 1day resampling."),
         ],
         "plan_restrictions": "Available on free tier.",
         "common_pitfalls": [
@@ -93,10 +90,7 @@ ASSET_CLASS_GUIDES: dict[str, dict] = {
                 "Use get_crypto_prices for historical OHLCV data at various intraday"
                 " or daily intervals."
             ),
-            (
-                "Pass comma-separated tickers to get_crypto_prices for multiple assets"
-                " at once."
-            ),
+            ("Pass comma-separated tickers to get_crypto_prices for multiple assets at once."),
         ],
         "plan_restrictions": "Available on free tier.",
         "common_pitfalls": [
@@ -122,10 +116,7 @@ ASSET_CLASS_GUIDES: dict[str, dict] = {
             "Filter by tags for topic-based news (e.g. earnings, dividends).",
             "Use start_date/end_date to restrict date range; default returns most recent.",
             "Paginate with limit and offset for large result sets.",
-            (
-                "Use sort_by='crawlDate' for recency or 'publishedDate'"
-                " for article publish date."
-            ),
+            ("Use sort_by='crawlDate' for recency or 'publishedDate' for article publish date."),
         ],
         "plan_restrictions": "Available on free tier.",
         "common_pitfalls": [
@@ -397,9 +388,7 @@ def fundamentals_definitions_resource() -> str:
             },
             {
                 "name": "freeCashFlow",
-                "description": (
-                    "Free cash flow (operating cash flow - capital expenditures)"
-                ),
+                "description": ("Free cash flow (operating cash flow - capital expenditures)"),
                 "statement_type": "cash_flow",
             },
         ],
@@ -430,8 +419,7 @@ def date_formats_resource() -> str:
         "news_sort_options": ["crawlDate", "publishedDate"],
         "corporate_actions_date_params": {
             "note": (
-                "Dividends and splits filter by ex-date;"
-                " dividend_yield filters by calendar date."
+                "Dividends and splits filter by ex-date; dividend_yield filters by calendar date."
             ),
             "dividends_and_splits": {
                 "start_date_maps_to": "startExDate",
