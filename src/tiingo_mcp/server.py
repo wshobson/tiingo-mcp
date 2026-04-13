@@ -408,3 +408,8 @@ async def get_splits(
         ctx,
         _get_client().get_splits(ticker, start_date=start_date, end_date=end_date),
     )
+
+
+# ── Register resources and prompts ───────────────────────────────────
+
+import tiingo_mcp.resources  # noqa: E402, F401
